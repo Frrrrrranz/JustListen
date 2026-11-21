@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/add_music_dialog_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/intro_title"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/scrub_track" />
+
+        <TextView
+            style="@style/IntroStep"
+            android:text="@string/intro_step_switch" />
+
+        <TextView
+            style="@style/IntroStep"
+            android:layout_marginTop="18dp"
+            android:text="@string/intro_step_pause" />
+
+        <TextView
+            style="@style/IntroStep"
+            android:layout_marginTop="18dp"
+            android:text="@string/intro_step_scrub" />
+
+        <TextView
+            style="@style/IntroStep"
+            android:layout_marginTop="18dp"
+            android:text="@string/intro_step_exit" />
+
+        <TextView
+            style="@style/IntroStep"
+            android:layout_marginTop="18dp"
+            android:text="@string/intro_step_add" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/scrub_track" />
+
+        <CheckBox
+            android:id="@+id/hideIntroCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:buttonTint="@color/disc_copper"
+            android:fontFamily="sans-serif"
+            android:text="@string/intro_hide_next_time"
+            android:textColor="@color/text_muted"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/introDoneButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical|end"
+            android:text="@string/intro_done"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

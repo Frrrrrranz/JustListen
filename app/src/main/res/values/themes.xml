@@ -1,0 +1,17 @@
+<resources>
+    <style name="Base.Theme.FilmPlayer" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/page_background</item>
+    </style>
+
+    <style name="Theme.FilmPlayer" parent="Base.Theme.FilmPlayer" />
+
+    <style name="IntroStep">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+</resources>

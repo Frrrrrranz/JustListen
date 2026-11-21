@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page_background">#FAF9F6</color>
+    <color name="text_primary">#1B1C1A</color>
+    <color name="text_muted">#777874</color>
+    <color name="disc_stone">#C7C4BE</color>
+    <color name="disc_copper">#A98469</color>
+    <color name="disc_ink">#34383A</color>
+    <color name="disc_blue">#52778C</color>
+    <color name="disc_paper">#D5CEC2</color>
+    <color name="scrub_track">#DFE0DA</color>
+    <color name="scrub_progress">#A2A9A3</color>
+</resources>
