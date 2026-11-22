@@ -43,7 +43,7 @@ import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity {
     private static final int MAX_DOCUMENTS = 10000;
-    private static final long SCAN_RESULT_DISPLAY_MS = 4000L;
+    private static final long TEMPORARY_STATUS_DISPLAY_MS = 4000L;
     private static final String LAST_PLAYED_SONG_KEY = "last_played_song_key";
     private static final String HIDE_INTRO_KEY = "hide_intro";
     private static final String DEVICE_SCAN_SOURCE = "mediastore:external";
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
             resumeAfterScrub = false;
             carouselView.exitPlayback();
             selectedSongTitle.setVisibility(View.GONE);
-            showStatus(getString(R.string.playback_finished));
+            showTemporaryStatus(getString(R.string.playback_finished));
         }
 
         @Override
@@ -570,7 +570,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         showStatus(message);
-        scanStatus.postDelayed(hideScanStatus, SCAN_RESULT_DISPLAY_MS);
+        scanStatus.postDelayed(hideScanStatus, TEMPORARY_STATUS_DISPLAY_MS);
     }
 
     @Override
