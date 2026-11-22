@@ -28,7 +28,6 @@ h1 span, .play-copy h2 span { color: var(--rust); }
 .button-dark:hover { background: var(--rust-dark); }
 .hero-plate { position: relative; display: flex; align-items: center; justify-content: center; height: min(680px, 59vw); min-height: 510px; overflow: hidden; background: var(--rust); }
 .hero-plate::before { content: ""; position: absolute; inset: 8%; border: 1px solid rgba(255,255,255,.26); }
-.plate-label { position: absolute; top: 26px; left: 28px; z-index: 2; color: #f7e9d6; font: 700 12px "Arial Narrow", Arial, sans-serif; letter-spacing: .15em; }
 .plate-disc { position: absolute; top: 21%; left: -15%; width: 80%; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.17); border-radius: 50%; }
 .plate-disc::before, .plate-disc::after { content: ""; position: absolute; inset: 12%; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; }
 .plate-disc::after { inset: 24%; }
